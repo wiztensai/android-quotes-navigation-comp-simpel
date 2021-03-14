@@ -16,9 +16,17 @@
         android:id="@+id/f_Einstein"
         android:name="com.example.latihankotlin.F_Einstein"
         android:label="f_einstein"
-        tools:layout="@layout/f_musk" />
+        tools:layout="@layout/f_musk" >
+        <action
+            android:id="@+id/action_f_Einstein_to_f_BiografiEinstein"
+            app:destination="@id/f_BiografiEinstein" />
+    </fragment>
     <fragment
         android:id="@+id/f_Musk"
         android:name="com.example.latihankotlin.F_Musk"
         android:label="F_Musk" />
+    <fragment
+        android:id="@+id/f_BiografiEinstein"
+        android:name="com.example.latihankotlin.F_BiografiEinstein"
+        android:label="F_BiografiEinstein" />
 </navigation>

@@ -6,19 +6,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.latihankotlin.databinding.FEinsteinBinding
+import com.example.latihankotlin.databinding.FBiografiEinsteinBinding
 
-class F_Einstein : Fragment() {
+class F_BiografiEinstein : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val bind = FBiografiEinsteinBinding.inflate(layoutInflater)
 
-        val bind = FEinsteinBinding.inflate(layoutInflater)
-
-        bind.btnBiografi.setOnClickListener {
-            findNavController().navigate(R.id.f_BiografiEinstein)
+        bind.btnBack.setOnClickListener {
+            findNavController().popBackStack()
         }
 
         return bind.root
