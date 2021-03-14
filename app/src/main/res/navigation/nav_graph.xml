@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/f_Einstein">
+
+
+    <fragment
+        android:id="@+id/f_Tesla"
+        android:name="com.example.latihankotlin.F_Tesla"
+        android:label="f_tesla"
+        tools:layout="@layout/f_tesla" />
+
+    <fragment
+        android:id="@+id/f_Einstein"
+        android:name="com.example.latihankotlin.F_Einstein"
+        android:label="f_einstein"
+        tools:layout="@layout/f_musk" />
+    <fragment
+        android:id="@+id/f_Musk"
+        android:name="com.example.latihankotlin.F_Musk"
+        android:label="F_Musk" />
+</navigation>
